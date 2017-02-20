@@ -13,18 +13,16 @@ package greeting
 const testVersion = 3
 
 // HelloWorld needs a comment documenting it as package does.
-func HelloWorld(x string) string {
+func HelloWorld(input string) string {
 	// Write some code here to pass the test suite.
 
 	// When you have a working solution, REMOVE ALL THE STOCK COMMENTS.
 	// They're here to help you get started but they only clutter a finished solution.
 	// If you leave them in, reviewers will protest!
-	if x == "" {
+	if input == "" {
 		return "Hello, World!"
-	} else if x == "Gopher" {
-		return "Hello, Gopher!"
-	} else if x == "ゴーファー" {
-		return "Hello, ゴーファー!"
+	} else {
+		return "Hello, " + input + "!"
 	}
 	return ""
 }
