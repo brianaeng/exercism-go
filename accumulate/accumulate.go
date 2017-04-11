@@ -1,7 +1,7 @@
 package accumulate
 
-func accumulate(collection []string, operation func(string) string) []int {
-  final_results := make([]int, len(collection))
+func Accumulate(collection []string, operation func(string) string) []string {
+  var final_results []string
 
   for _, val := range(collection) {
     item := operation(val)
